@@ -1,12 +1,12 @@
+// #include <bits/stdc++.h>
 #include <iostream>
 using namespace std;
 
 int main()
 {
-	int age;
-
-	cin >> age;
-	cout << "Your age is: " << age << "\n";
-
+    string str;
+    getline(cin, str);
+    cout << str;
 	return 0;
 }
+

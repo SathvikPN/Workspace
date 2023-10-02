@@ -8,27 +8,19 @@
         "args": [
             ">",
             "output.txt",
-            
-          "cp",
-          "\"${file}\"",
-          "${workspaceFolder}/temporary.cpp",
-          "&&",
           "g++",
-          "temporary.cpp",
+          "\"${file}\"",
           "-o",
-          "temporary",
+          "a.out",
           "&&",
-          "./temporary",
+          "./a.out",
           "<",
           "input.txt",        
           ">",
           "output.txt",
           "&&",
           "rm",
-          "temporary",
-          "&&",
-          "rm",
-          "temporary.cpp"
+          "a.out"
         ],
         "presentation": {
           "reveal": "never"
